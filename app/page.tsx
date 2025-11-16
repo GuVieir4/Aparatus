@@ -6,9 +6,11 @@ import BookingItem from "./_components/booking-item";
 import { prisma } from "@/lib/prisma";
 import BarbershopItem from "./_components/barbershop-item";
 import Footer from "./_components/footer";
-import { PageContainer } from "./_components/ui/page";
-import { PageSection } from "./_components/ui/page";
-import { PageSectionTitle } from "./_components/ui/page";
+import {
+  PageContainer,
+  PageSection,
+  PageSectionTitle,
+} from "./_components/ui/page";
 
 const Home = async () => {
   const recommendedBarbershops = await prisma.barbershop.findMany({
