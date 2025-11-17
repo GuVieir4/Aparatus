@@ -8,11 +8,7 @@ import { Separator } from "@/app/_components/ui/separator";
 import { ServiceItem } from "@/app/_components/service-item";
 import { PhoneItem } from "@/app/_components/phone-item";
 import Footer from "@/app/_components/footer";
-import {
-  PageContainer,
-  PageSection,
-  PageSectionTitle,
-} from "../../_components/ui/page";
+import { PageSectionTitle } from "../../_components/ui/page";
 
 const BarbershopPage = async (props: PageProps<"/barbershops/[id]">) => {
   const { id } = await props.params;
